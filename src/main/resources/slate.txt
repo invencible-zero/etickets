@@ -1,0 +1,100 @@
+classDiagram
+    class model {
+        Genre
+        Movie
+        Show
+        City
+        Customer
+        Language
+        Offer
+        Partner
+        Screen
+        Theatre
+    }
+
+    class repository {
+        GenreRepository
+        MovieRepository
+        ShowRepository
+        CityRepository
+        CustomerRepository
+        LanguageRepository
+        OfferRepository
+        PartnerRepository
+        ScreenRepository
+        TheatreRepository
+    }
+
+    class service {
+        GenreService
+        MovieService
+        ShowService
+        CityService
+        CustomerService
+        LanguageService
+        OfferService
+        PartnerService
+        ScreenService
+        TheatreService
+    }
+
+    class controller {
+        GenreController
+        MovieController
+        ShowController
+        CityController
+        CustomerController
+        LanguageController
+        OfferController
+        PartnerController
+        ScreenController
+        TheatreController
+    }
+
+    model <.. repository : Contains
+    repository <.. service : Contains
+    service <.. controller : Contains
+
+    class Genre
+    class Movie
+    class Show
+    class City
+    class Customer
+    class Language
+    class Offer
+    class Partner
+    class Screen
+    class Theatre
+
+    class GenreRepository
+    class MovieRepository
+    class ShowRepository
+    class CityRepository
+    class CustomerRepository
+    class LanguageRepository
+    class OfferRepository
+    class PartnerRepository
+    class ScreenRepository
+    class TheatreRepository
+
+    class GenreService
+    class MovieService
+    class ShowService
+    class CityService
+    class CustomerService
+    class LanguageService
+    class OfferService
+    class PartnerService
+    class ScreenService
+    class TheatreService
+
+    class GenreController
+    class MovieController
+    class ShowController
+    class CityController
+    class CustomerController
+    class LanguageController
+    class OfferController
+    class PartnerController
+    class ScreenController
+    class TheatreController
